@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Assistance App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="register-container">
+        <h1>Register</h1>
+        <form id="registerForm">
+            <label for="userType">Are you a Volunteer or Elderly?</label>
+            <select id="userType" name="userType" required>
+                <option value="volunteer">Volunteer</option>
+                <option value="elderly">Elderly</option>
+            </select>
+
+            <div id="familyDetails" style="display: none;">
+                <h3>Family Member Details</h3>
+                <label for="familyName">Family Member Name:</label>
+                <input type="text" id="familyName" name="familyName" placeholder="Enter family member's name">
+                <label for="familyContact">Family Contact Number:</label>
+                <input type="text" id="familyContact" name="familyContact" placeholder="Enter family contact number">
+            </div>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a>.</p>
+    </div>
+    <script>
+        document.getElementById('userType').addEventListener('change', function() {
+            const familyDetails = document.getElementById('familyDetails');
+            familyDetails.style.display = this.value === 'elderly' ? 'block' : 'none';
+        });
+
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Registration successful! Redirecting to login...');
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+

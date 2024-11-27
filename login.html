@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Assistance App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <!-- Ask User Type -->
+            <label for="userType">Are you a Volunteer or Elderly?</label>
+            <select id="userType" name="userType" required>
+                <option value="">Select an option</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="elderly">Elderly</option>
+            </select>
+    
+            <!-- Username Input -->
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            
+            <!-- Password Input -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <!-- Login Button -->
+            <button type="submit">Login</button>
+            
+            <!-- Register Link -->
+            <span id="register-link" onclick="window.location.href='register.html';">
+                Don’t have an account? Register here.
+            </span>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const username = document.getElementById('username').value;
+            const userType = document.getElementById('userType').value;
+    
+            // Validate user type selection
+            if (!userType) {
+                alert('Please select whether you are a Volunteer or Elderly.');
+                return;
+            }
+    
+            // Store username and user type in localStorage
+            localStorage.setItem('username', username);
+            localStorage.setItem('userType', userType);
+    
+            // Redirect based on user type
+            if (userType === 'volunteer') {
+                alert('Welcome, Volunteer!');
+                window.location.href = 'volunteer.html';
+            } else if (userType === 'elderly') {
+                alert('Welcome, Elderly user!');
+                window.location.href = 'home.html';
+            }
+        });
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+

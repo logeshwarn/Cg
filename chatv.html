@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Volunteer Chat</h1>
+
+        <!-- Chat with Elderly Section -->
+        <div class="chat-box" id="elderlyChatBox">
+            <h2>Elderly Chat</h2>
+            <ul id="elderlyChatMessages">
+                <!-- Elderly chat messages will be populated here -->
+            </ul>
+            <input type="text" id="elderlyMessageInput" placeholder="Type a message..." />
+            <button id="sendElderlyMessageButton" class="send-button">Send</button>
+        </div>
+
+        <!-- Local Community Chat Section -->
+        <div class="chat-box" id="communityChatBox">
+            <h2>Local Community Chat</h2>
+            <ul id="communityChatMessages">
+                <!-- Local community chat messages will be populated here -->
+            </ul>
+            <input type="text" id="communityMessageInput" placeholder="Type a message..." />
+            <button id="sendCommunityMessageButton" class="send-button">Send</button>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navbar">
+            <a href="volunteer.html">Home</a>
+            <a href="chatv.html">Chat</a>
+            <a href="settingsv.html">Settings</a>
+        </div>
+    </div>
+
+    <script src="chatv.js"></script>
+</body>
+</html>
+

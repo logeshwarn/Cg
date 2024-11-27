@@ -1,0 +1,423 @@
+/* User Type Dropdown */
+label[for="userType"], #userType {
+    display: block; /* Ensure proper alignment */
+    text-align: center; /* Center the label and dropdown */
+    width: 70%; /* Same width as input fields for consistency */
+    max-width: 300px; /* Restrict maximum width */
+    margin: 10px auto; /* Center align with spacing */
+    font-size: 16px; /* Readable font size */
+}
+
+#userType {
+    padding: 10px; /* Space inside the dropdown */
+    border: 1px solid #ccc; /* Border for consistency */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Subtle background color */
+    transition: border 0.3s ease; /* Smooth focus effect */
+}
+
+#userType:focus {
+    border-color: #4CAF50; /* Highlight on focus */
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Add spacing for the form */
+form #userType {
+    margin-bottom: 20px; /* Space between dropdown and next field */
+}
+
+
+/* Center Labels and Input Fields */
+label, #register-link {
+    display: block;
+    text-align: center; /* Center align the text */
+    font-size: 16px; /* Adjust font size */
+    margin-bottom: 5px; /* Reduce space below the label */
+    color: #333; /* Ensure consistency with the theme */
+}
+
+/* Input Fields */
+#username, #password {
+    width: 70%;
+    max-width: 300px;
+    padding: 8px;
+    font-size: 14px;
+    margin: 5px auto 15px; /* Add smaller margin above and below */
+    display: block;
+}
+
+/* Login Button */
+button[type="submit"] {
+    width: 70%;
+    max-width: 200px;
+    padding: 10px;
+    font-size: 14px;
+    margin: 10px auto; /* Center the button with proper spacing */
+    display: block;
+}
+
+/* Register Link Styling */
+#register-link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #4CAF50;
+    cursor: pointer;
+}
+
+#register-link:hover {
+    text-decoration: underline;
+}
+
+
+/* General Reset */
+body, h1, h2, h3, p, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container Styling */
+.container, .register-container, .chat-container, .settings-container, .home-container, .landing-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.alert-button {
+    background-color: #e74c3c;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.alert-button:hover {
+    background-color: #c0392b;
+}
+
+/* Input Fields & Select Boxes */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #34495e;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #2c3e50;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+}
+
+/* Chat Box */
+.chat-box {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box h3 {
+    margin-bottom: 10px;
+    color: #2980b9;
+    font-size: 18px;
+}
+
+#communityChatBox, #friendsChatBox {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Landing Page */
+.landing-container {
+    text-align: center;
+}
+
+.landing-container h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.landing-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+}
+
+.landing-container button {
+    width: auto;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+/* Settings Page */
+.settings-container {
+    text-align: center;
+}
+
+.settings-container label {
+    display: block;
+    margin: 15px 0;
+    font-size: 18px;
+    color: #34495e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+/* General Volunteer Page Container */
+.volunteer-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Headings */
+.volunteer-container h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.volunteer-container h2 {
+    color: #34495e;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: left;
+}
+
+/* Help Button */
+.help-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.help-button:hover {
+    background-color: #45a049;
+}
+
+/* Request List */
+.request-list {
+    text-align: left;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+.request-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.request-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.request-list li:last-child {
+    border-bottom: none;
+}
+
+.request-list button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.request-list button:hover {
+    background-color: #2980b9;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #34495e;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #2c3e50;
+}
+/* Elderly Chat */
+#elderlyChatBox {
+    background-color: #e0f7fa; /* Light Blue */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#elderlyChatMessages {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Local Community Chat */
+#communityChatBox {
+    background-color: #fff3e0; /* Light Orange */
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#communityChatMessages {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #34495e;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    height: 50px;  /* Adjust the height to fit in the navbar */
+    width: auto;  /* Ensure aspect ratio is maintained */
+    max-width: 100px; /* Limit the width to avoid large logos */
+}
+
+

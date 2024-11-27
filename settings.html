@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Assistance App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="chat.html">Chat</a>
+        <a href="settings.html" class="active">Settings</a>
+    </div>
+
+    <div class="settings-container">
+        <h1>Settings</h1>
+        <label for="languageSelect">Change Language:</label>
+        <select id="languageSelect" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+        </select>
+    </div>
+    <script>
+        function changeLanguage() {
+            const selectedLanguage = document.getElementById('languageSelect').value;
+            alert(`Language changed to: ${selectedLanguage}`);
+        }
+    </script>
+</body>
+</html>
+
